@@ -35,7 +35,7 @@
                 <Border Grid.Column="3" Grid.Row ="0" Background="LightGreen"  />
 
                 <StackPanel Grid.Column="0" Grid.Row="1" Margin="20">
-                    <ProgressBar Minimum="0" Maximum="100" Value="75" Height="50" Name="PbStatus" IsIndeterminate="True"/>
+                <ProgressBar Minimum="0" Maximum="100" Value="75" Height="50" Name="PbStatus" IsIndeterminate="True"/>
                     <TextBlock Text="{Binding ElementName=pbStatus, Path=Value, StringFormat={}{0:0}%}" HorizontalAlignment="Center" VerticalAlignment="Center" />
                     <Button Content="Start" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" Width="100" Height="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Click="Button_Click_Pb"/>
                 </StackPanel>

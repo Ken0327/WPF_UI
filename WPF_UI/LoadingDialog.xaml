@@ -12,7 +12,10 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <TextBlock Name="Title" Margin="0 8 0 0" Text="讀取中" Grid.Row="0" HorizontalAlignment="Center" />
-        <ProgressBar Grid.Row="1" Name="LoadingBar" IsIndeterminate="True" />
+        <TextBlock Name="Title" Style="{StaticResource MaterialDesignHeadlineTextBlock}"
+                 Margin="0 8 0 0" Text="讀取中"
+                 Grid.Row="0" HorizontalAlignment="Center" />        
+        <ProgressBar Name="LoadingBar"  Grid.Row="1"  Style="{StaticResource MaterialDesignCircularProgressBar}"
+                     IsIndeterminate="True" />    
     </Grid>
 </UserControl>
